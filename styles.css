@@ -90,7 +90,7 @@ header p {
     transition: opacity 0.5s 0.05s ease;
 }
 
-.wrapper .download span {
+/* .wrapper .download span {
     opacity: 0;
 }
 
@@ -113,3 +113,4 @@ header p {
     opacity: 1;
     transition: opacity 0.5s 0.05s ease;
 }
+*/

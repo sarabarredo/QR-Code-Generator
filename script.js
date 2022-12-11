@@ -24,5 +24,5 @@ qrInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         document.getElementById('btn').click();
   }
-  });
+});
 

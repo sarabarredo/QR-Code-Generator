@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator | Sara Barredo</title>
+    <link rel="icon" type="image/png" href="/img/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Generador de códigos QR</h1>
+            <p>Añade una url o introduce un texto para crear el código QR</p>
+        </header>
+        <div class="form">
+            <input type="text" placeholder="Introduce texto o url">
+            <button id="btn">Generar código QR</button>
+        </div>
+        <div class="qr-code">
+            <img src="" alt="qr-code" id="qr-code">
+        </div>
+        <!--Futura actualización implementando la opción de descarga del QR -->
+        <!--<div class="download">
+            <span>Descargar QR:</span>
+            <li>PNG</li>
+            <li>JPG</li>
+        </div>-->
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2000' height='2000' preserveAspectRatio='none' viewBox='0 0 2000 2000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1208%26quot%3b)' fill='none'%3e%3crect width='2000' height='2000' x='0' y='0' fill='url(%23SvgjsLinearGradient1209)'%3e%3c/rect%3e%3cpath d='M2000 0L1936.83 0L2000 41.89z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1936.83 0L2000 41.89L2000 812.8L1311.6299999999999 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M1311.63 0L2000 812.8L2000 1001.26L1176.3200000000002 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M1176.32 0L2000 1001.26L2000 1307.7L819.54 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 2000L785.36 2000L0 1707.67z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 1707.67L785.36 2000L1090.68 2000L0 1202.22z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 1202.22L1090.68 2000L1161.96 2000L0 913.25z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 913.25L1161.96 2000L1557.58 2000L0 666.0699999999999z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1208'%3e%3crect width='2000' height='2000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='0%25' x2='100%25' y2='100%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1209'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(174%2c 183%2c 243%2c 1)' offset='0.98'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.wrapper {
+    background-color: #fff;
+    max-width: 500px;
+    height: 260px;
+    padding: 16px 22px;
+    border-radius: 15px;
+    box-shadow: 5px 2px 10px #e0e0e0;
+    transition: height 0.2s ease;
+}
+
+.wrapper.active {
+    height: 600px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
+}
+
+.wrapper .form {
+    margin: 22px 0 30px;
+}
+
+.form :where(input, button) {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form input {
+    border: 1px solid #b5bce9;
+    font-size: 18px;
+    padding: 0 17px;
+}
+
+.form button {
+    color: #fff;
+    background-image: linear-gradient(to right,  #828ede, #b5bce9);
+    margin-top: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.form button:hover {
+    box-shadow: 0 0 5px #00000080;
+}
+
+.wrapper .qr-code {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    padding: 15px 0 15px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+
+.wrapper .download span {
+    opacity: 0;
+}
+
+.wrapper .download li {
+    list-style: none;
+    color:#828ede;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 15px;
+    opacity: 0;
+}
+
+.wrapper .download li:hover {
+    text-decoration: underline;
+}
+
+.wrapper.active .download li,
+.wrapper.active .download span {
+    opacity: 1;
+    transition: opacity 0.5s 0.05s ease;
+}
